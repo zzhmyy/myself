@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/details.css"/>
+		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="js/details.js" ></script>
+		<script src="js/jquery.jqzoom-core(1).js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.jqzoom{
+  position:relative;
+  cursor:move;
+}
+.zoomdiv {
+  z-index:  999;
+  position        : absolute;
+  top:0px;
+  left:0px;
+  width          : 300px;
+  height         : 300px;
+  background: #ffffff;
+  border:1px solid #CCCCCC;
+  display:none;
+  text-align: center;
+  overflow: hidden;
+}
+.jqZoomPup {
+  z-index         : 999;
+  visibility       : hidden;
+  position        : absolute;
+  top:0px;
+  left:0px;
+  width          : 1px;
+  height         : 1px;
+  border: 1px solid #aaa;
+  /*background: #ffffff url(/images/shopping/zoomlens.gif) 50% top no-repeat;*/
+  background: #ffffff 10%;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  filter: alpha(Opacity=50);
+}
+	</style>
+	<body>
+		
+		<!--刷新页面弹出广告开始-->
+		<div class="adv">
+			<span class="ad_exit"><img src="img/adv1.png"/></span>			
+			<img src="img/adv2.png"/>
+		</div>
+	<!--刷新页面弹出广告结束-->
+		<!--顶部导航条开始-->
+		<div class="top_page">
+		    <div class="top">
+		    	<!--导航条左边-->
+		        <div class="top_l fl"><a href="#">送货至：四川</a></div>
+		        <!--导航条右边-->
+		        <div class="top_r fr">
+		            <ul>
+		            	<li>
+		            		Hi,请<a href="login.html" style="padding-left: 5px;">登录</a>
+		            		<a href="zhuce.html" style="padding-left: 0px; color: red;">免费注册</a>
+		            	</li>
+		            	<li>|</li>
+		                <li><a href="#">我的订单</a></li>
+		                <li>|</li>
+		                <li><a href="#">收藏夹</a></li>
+		                <li id="user1">
+		                	<a href="#">客户服务</a>
+		                	<img src="img/t_arrow.gif" class="xwcms" />
+		                    <ul>
+		                        <li><a href="#">包裹跟踪</a></li>
+		                        <li><a href="#">常见问题</a></li>
+		                        <li><a href="#">在线投诉</a></li>
+		                        <li><a href="#">配送范围</a></li>
+		                    </ul>
+		                </li>
+		                <li id="user2">
+		                	<a href="#">网站导航</a>
+		                	<img src="img/t_arrow.gif" class="xwcms" />
+		                    <ul>
+		                        <li><a href="#">一号商城</a></li>
+		                        <li><a href="#">一号社区</a></li>
+		                        <li><a href="#">网站联盟</a></li>
+		                        <li><a href="#">招商渠道</a></li>
+		                    </ul>
+		                </li>
+		                <li>|</li>
+		                <li style="position: relative; padding-right: 50px;">
+		                	<a href="#" style="padding-right: 0px;">关于我们：</a>
+		                	<a href="" style="position:absolute;top: 0px;left: 70px; padding: 0px;">
+		                	<img src="img/sh1.png"/>
+		                	</a>
+		                	<a href="" style="position:absolute;top: 2px;left: 95px; padding: 0px;">
+		                	<img src="img/sh2.png"/>
+		                	</a>
+		                </li>
+						<li>|</li>
+						<li><a href="#">手机版</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		<!--顶部导航条结束-->
+		
+		<!--头部搜索部分开始-->
+		<div class="logo">
+		    <div class="logo_l fl"><img src="img/logo.png" alt="logo"/></div>
+		    <div class="logo_r_content fl">
+		        <div class="logo_r_content_shopping_border">
+		            <input type="text" class="logo_r_searche fl" placeholder="  请输入关键字" value="">
+		            <input type="button" value="搜索" class="logo_r_btn fr">
+		        </div>
+		        <ul class="logo_r_content_shopping">
+		            <li><a href="">aj</a></li>
+		            <li><a href="">卷纸</a></li>
+		            <li><a href="">面包</a></li>
+		            <li><a href="">笔记本</a></li>
+		            <li><a href="">花生油</a></li>
+		            <li><a href="">自营</a></li>
+		            <li><a href="">用纸</a></li>
+		            <li><a href="">厨房</a></li>
+		              
+		            
+		                       
+		        </ul>
+		    </div>
+		    <div class="fl shopping_car">
+	    		<a href="shoppcar.html">
+	    			<div>
+	    				购物车
+	    			</div>
+	    		</a>
+	    		<div class="shopping_car_dis">
+	    			<ul>
+	    				<li>
+	    					<div class="shopping_car_li_top">
+	    						<a href="">一号店满199减100</a>
+	    						<span>共1件商品</span>
+	    					</div>
+	    					<div>
+	    						<img src="img/shop1.png" class="fl"/>
+	    						<div class="shopping_car_li_cen fr">
+	    							<a href="">宝贝许愿坊</a>
+	    							<a href="">童装女装套装</a>
+	    							<div class="shopping_car_li_dow fr">X</div>
+	    							<p>深蓝 140码</p>
+	    							<div class="shopping_car_li_ad fl">
+	    								<img src="img/jian.gif" id="dow"/>
+	    								<input id="num1" type="text" name="amount" value="1" class="num">
+	    								<img src="img/jia.gif" id="add"/>
+	    							</div>
+	    							<span class="meny fr">¥190</span>
+	    							<nav class="price1" style="display: none;">190</nav>
+	    						</div>
+	    					</div>
+	    					<div class="shopping_car_li_foot">
+	    						<p>参加一项促销，节约成本¥100</p>
+	    					</div>
+	    				</li>
+	    			
+	    				<li>
+	    					<div class="shopping_car_li_top">
+	    						<a href="">一号店</a>
+	    						<span>共1件商品</span>
+	    					</div>
+	    					<div>
+	    						<img src="img/shop2.png" class="fl"/>
+	    						<div class="shopping_car_li_cen fr">
+	    							<a href="">亨氏</a>
+	    							<a href="">乐维滋清乐2+2果汁</a>
+	    							<div class="shopping_car_li_dow fr">X</div>
+	    							<p>草莓山楂枸杞</p>
+	    							<div class="shopping_car_li_ad fl">
+	    								<img src="img/jian.gif" id="dow"/>
+	    								<input id="num1" type="text" name="amount" value="1" class="num">
+	    								<img src="img/jia.gif" id="add"/>
+	    							</div>
+	    							<span class="meny fr">¥5.8</span>
+	    							<nav class="price1" style="display: none;">5.8</nav>
+	    						</div>
+	    					</div>
+	    					<div class="shopping_car_li_foot"></div>
+	    				</li>
+	    				
+	    				<li>
+	    					<div class="shopping_car_li_top">
+	    						<a href="">一号店</a>
+	    						<span>共1件商品</span>
+	    					</div>
+	    					<div>
+	    						<img src="img/shop3.png" class="fl" style="height: 90px; width: 90px;"/>
+	    						<div class="shopping_car_li_cen fr">
+	    							<a href="">亨氏</a>
+	    							<a href="">乐维滋清乐2+2果汁</a>
+	    							<div class="shopping_car_li_dow fr">X</div>
+	    							<p>草莓山楂枸杞</p>
+	    							<div class="shopping_car_li_ad fl">
+	    								<img src="img/jian.gif" id="dow"/>
+	    								<input id="num1" type="text" name="amount" value="1" class="num">
+	    								<img src="img/jia.gif" id="add"/>
+	    							</div>
+	    							<span class="meny fr">¥758</span>
+	    							<nav class="price1" style="display: none;">758</nav>
+	    						</div>
+	    					</div>
+	    					<div class="shopping_car_li_foot">
+	    						<p>全场包邮</p>
+	    					</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+		    </div>
+		    <!--购物车部分结束-->
+		</div>
+		<!--头部搜索部分结束-->		
+		
+		<!--中间主要导航内容-->
+		<div style="width: 100%; border-bottom: 2px solid red;padding-top: 70px;">
+			<!--商品分类开始-->
+			<div class="shopping_select">
+				<div id="shopping_select_l" style="position: relative;">
+				    <div class="shopping_select_l fl" style="position: relative;">
+				        <h1>所有商品分类</h1>
+				        <img src="img/xiala_shanp.png" style="position: absolute;top: 13px;right: 65px;"/>
+				    </div>
+				    <!--商品分类结束-->
+					<div class="banner_l fl" style="position: absolute;top: 34px; display: none;z-index: 1000;">
+			            <ul>
+			                <li><s><img src="img/nav1.png" alt=""/></s><a href="#">进口食品、生鲜</a></li>
+			                <li><s><img src="img/nav2.png" alt=""/></s><a href="#">食品、饮料、酒</a></li>
+			                <li><s><img src="img/nav3.png" alt=""/></s><a href="#">母婴、玩具、童装</a></li>
+			                <li><s><img src="img/nav4.png" alt=""/></s><a href="#">家居、家庭清洁、纸品</a></li>
+			                <li><s><img src="img/nav5.png" alt=""/></s><a href="#">美妆、个人护理、洗护</a></li>
+			                <li><s><img src="img/nav6.png" alt=""/></s><a href="#">女装、内衣、中老年</a></li>
+			                <li><s><img src="img/nav7.png" alt=""/></s><a href="#">鞋靴、箱包、腕表配饰</a></li>
+			                <li><s><img src="img/nav8.png" alt=""/></s><a href="#">男装、户外、户外健身</a></li>
+			                <li><s><img src="img/nav9.png" alt=""/></s><a href="#">手机、数码、电脑</a></li>
+			                <li><s><img src="img/nav10.png" alt=""/></s><a href="#">礼品、充值</a></li>
+			            </ul>
+			        </div>
+		        </div>
+		        
+			    <div class="shopping_select_r fl">
+			        <ul>
+			            <li><a href="index.html" style="color: #FF4E41;">一号抢购</a></li>
+			            <li><a href="#" style="color: #FF4E41;">一号团</a></li>
+			            <li><a href="#">领劵中心</a></li>
+			            <li><a href="#">充值中心</a></li>
+			            <li><a href="#">全球进口</a></li>
+			            <li><a href="#">一号生鲜</a></li>
+			            <li><a href="#">美妆个户</a></li>
+			            <li><a href="#">家居馆</a></li>
+			        </ul>
+			    </div>
+			    <div class="shopping_select_phone fr">
+			    	<a href=""><img src="img/phone.png"/></a>
+			    </div>
+			</div>
+		</div>
+		<!--中间主要导航内容结束-->
+		<!--中间主要内容开始-->
+		<div class="deta_main">
+			<!--111物品地址11-->
+			<div class="deta_nav">
+				<ul>
+					<li><a href="">厨具</a></li>
+					<li>></li>
+					<li><a href="">咖啡具</a></li>
+					<li>></li>
+					<li><a href="">咖啡具套装</a></li>
+					<li>></li>
+					<li><a href="">HARIO滤杯经典有田烧制陶瓷滤杯V60咖啡滤杯配量勺 VDC系</a></li>
+					 
+				</ul>
+			</div>
+			<!--物品详情-->
+			<div class="deta_xiang">
+				
+				<div class="deta_xiang_lef fl">
+					<div class="deta_lef1">
+						<div class="deta_lef_img">
+							<ul>
+								<li class="jqzoom"><img src="img/de-glass1_small.png" jqimg="img/de-glass1_big.png" id="bigImg"/></li>
+								<li class="jqzoom"><img src="img/de-glass2_small.png" jqimg="img/de-glass2_big.png" id="bigImg"/></li>
+								<li class="jqzoom"><img src="img/de-glass3_small.png" jqimg="img/de-glass3_big.png" id="bigImg"/></li>
+								<li class="jqzoom"><img src="img/de-glass4_small.png" jqimg="img/de-glass4_big.png" id="bigImg"/></li>
+								<li class="jqzoom"><img src="img/de-glass5_small.png" jqimg="img/de-glass5_big.png" id="bigImg"/></li>
+							</ul>
+						</div>
+					</div>
+					<div class="deta_lef2">
+						<ul>
+							<li><img src="img/de-glass1.png"/></li>
+							<li><img src="img/de-glass2.png"/></li>
+							<li><img src="img/de-glass3.png"/></li>
+							<li><img src="img/de-glass4.png"/></li>
+							<li><img src="img/de-glass5.png"/></li>
+						</ul>
+					</div>
+					<div class="deta_lef3">
+						<p>商品编号1542965715 |</p>
+						<div class="deta_lef3_xin">
+							<ul>
+								<li><img src="img/aixin1.png"/></li>
+								<li><img src="img/aixin2.png"/></li>
+							</ul>
+							<span>关注</span>
+						</div>
+					</div>
+				</div>
+				<!--left-->
+				
+				<div class="deta_xiang_cent fl">
+					<div class="deta_cent1">
+						<p>
+							HARIO-日本原装进口滤杯经典有田烧制陶瓷滤杯V60咖啡滤杯配量勺 VDC系列咖啡器具 陶瓷滤杯红色1-2人份
+						</p>
+					</div>
+					<div class="deta_cent2">
+						<span>价格</span>
+						<span>¥159</span>
+					</div>
+					<div class="deta_cent3">
+						<img src="img/haoping.png"/>
+						<p><a href="">好评率<font>99%</font><span>[评论</span><font>900</font><span>+条]</span></a></p>
+					</div>
+					<div class="deta_cent4">
+						<p>
+							<span>促销</span>
+							<span>跨店铺满减</span>
+							<span>满3件，立减最低1件商品价格</span>
+							<span><a href="">立即参加</a></span>
+							<span>共1项，展开查看</span>
+						</p>
+						<p>
+							<span></span>
+							<span>满折</span>
+							<span>满2件，总价打9折；满3件，总...</span>
+							<span><a href="">立即参加</a></span>
+							<span>共1项，展开查看</span>
+						</p>
+						<div class="deta_cent4_happy">
+							<p><span>领取优惠券</span><font>关闭</font></p>
+							<div class="deta_cent4_hap_a">
+								<span>可领券</span>
+								<div class="deta_cent4_hap_b">
+									<div class="fl"><font>9折</font><br /><font>满200享9折</font></div>
+									<div class="fl">立即<br />领取</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="deta_cent5">
+						<span>选择颜色：</span>
+						<a href="">陶瓷滤杯红色1-4人份</a>
+						<a href="">陶瓷滤杯红色1-2人份</a>
+						<a href=""> 陶瓷滤杯白色1-4人份</a>
+						<a href="">陶瓷滤杯白色1-2人份</a> 
+					</div>
+					<div class="deta_cent6">
+						<div class="car_ka fl">
+							<span class="fl" style="padding-top: 5px;">送货至：</span>
+							<p class="car_ka_1 fl">
+								<span>上海静安区城区</span>
+							</p>
+							<p class="car_ka_2 fl"><span>有货</span>  店铺单笔订单不满79元,在线支付运费8元</p>
+							<!--选卡1-->
+							<div class="car_xunka">
+								<nav class="car_xunka_1">
+									<ul>
+										<li>上海</li> <li>静安区</li> <li>城区</li>
+									</ul>
+									<img src="img/a_close.png"/>
+								</nav>
+								<!--选择部分-->
+								<div class="car_are3">
+									<p>
+										<font>华北：</font>
+										<span>北京</span> 
+										<span>天津</span> 
+										<span>河北</span> 
+										<span>山西</span>
+										<span>内蒙古</span>
+									</p>
+									<p>
+										<font>华东：</font> 
+										<span>上海</span> 
+										<span>江苏</span> 
+										<span>浙江</span> 
+										<span>安徽</span>
+										<span>福建</span>
+										<span>山东</span>
+									</p>
+									<p>
+										<font>华南：</font> 
+										<span>广东</span> 
+										<span>广西</span> 
+										<span>海南</span>
+									</p>
+									<p>
+										<font>华中：</font> 
+										<span>江西</span> 
+										<span>河南</span> 
+										<span>湖北</span> 
+										<span>湖南</span>
+									</p>
+									<p>
+										<font>西南：</font> 
+										<span>重庆</span> 
+										<span>四川</span> 
+										<span>贵州</span> 
+										<span>云南</span>
+										<span>西藏</span>
+									</p>
+									<p>
+										<font>西北：</font> 
+										<span>陕西</span> 
+										<span>甘肃</span> 
+										<span>青海</span> 
+										<span>宁夏</span>
+										<span>新疆</span>
+									</p>
+									<p>
+										<font>东北：</font> 
+										<span>辽宁</span> 
+										<span>吉林</span> 
+										<span>黑龙江</span>
+									</p>
+								</div>
+								
+								<div class="car_are2">
+									<span>静安区</span>
+									<span>闸北区</span> 
+									<span>虹口区</span> 
+									<span>杨浦区</span> 
+									<span>宝山区</span>
+									
+									<span>闵行区</span> 
+									<span>嘉定区</span> 
+									<span>浦东新区</span> 
+									<span>青浦区</span> 
+									<span>松江区</span>
+									
+									<span>金山区</span>
+									<span>奉贤区</span>
+									<span>普陀区</span>
+									<span>黄浦区</span>
+									<span>崇明区</span>
+									
+									<span>徐汇区</span>
+									<span>长宁区</span>
+								</div>
+								
+								<div class="car_are1">
+									<span>城区</span>
+								</div>
+							</div>
+							
+						</div>
+						<!--选卡结束1-->
+						<p class="deta_cent6_p"><span>由  1号店  发货,  正田家居专营店 提供售后服务</span></p>
+						<div class="deta_cent6_add">
+							<input type="" name="" id="" value="1" />
+							<div class="fl">
+								<div id="num_add"><img src="img/txt_add.png"/></div>
+								<div id="num_dow"><img src="img/txt_dow1.png"/></div>
+							</div>
+							<div class="deta_cent6_adshop fl"><img src="img/shopcar_ico.png"/><span>加入购物车</span></div>
+							<a href="">降价通知</a>
+						</div>
+					</div>
+					
+					<div class="deta_cent7">
+						<span>保障</span>
+						<div title="支持7天无理由退货">支持7天无理由退货</div>
+						<div title="正品保障">正品保障</div>
+					</div>
+				</div>
+				<!--cent-->
+				<!--右边部分-->
+				<div class="deta_xiang_rig fr">
+					<div class="deta_rig1"><span>看了还看</span><div>换一批</div></div>
+					<ul class="deta_rig2">
+						<li>
+							<img src="img/de-rglass1.jpg"/>
+							<p>HARIO 冷泡咖啡壶 冰咖</p>
+							<p>¥40.8</p>
+						</li>
+						<li>
+							<img src="img/de-rglass2.jpg"/>
+							<p>HARIO 手冲咖啡壶玻璃壶</p>
+							<p>¥40.8</p>
+						</li>
+						<li>
+							<img src="img/de-rglass3.jpg"/>
+							<p>HARIO 日本原装进口V6</p>
+							<p>¥40.8</p>
+						</li>
+						<li style="display: none;">
+							<img src="img/de-rglass4.jpg"/>
+							<p>HARIO 日本进口手冲</p>
+							<p>¥40.8</p>
+						</li>
+						<li style="display: none;">
+							<img src="img/de-rglass5.jpg"/>
+							<p>HARIO 日本进口手冲</p>
+							<p>¥40.8</p>
+						</li>
+						<li style="display: none;">
+							<img src="img/de-rglass6.jpg"/>
+							<p>HARIO 日本进口手冲</p>
+							<p>¥40.8</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--上半部分结束-->
+			<!--下半部分开始-->
+			<div class="deta_bod">
+				<div class="deta_bod_lef fl">
+					<!--顶部店铺-->
+					<div class="deta_bod_lef1">
+						<div class="deta_lef1_a">
+							<a href=""><p>正田家居专营店</p></a>
+						</div>
+						<div class="deta_lef1_b">联系卖家</div>
+						<div class="deta_lef1_c"><a href="">进入店铺</a></div>
+					</div>
+					<!--11111-->
+					<div class="deta_bod_lef2">
+						<div class="deta_lef2_a">
+							<div class="deta_lef2_a1">
+								看了本商品的用户最终购买了
+							</div>
+							<div class="deta_lef2_a2">
+								<a href=""><img title="HARIO V60系列 " src="img/de-lglass1.jpg"/></a>
+								<p title="HARIO V60系列 "><a href="">HARIO咖啡壶 耐热</a></p>
+								<p>¥40.8</p>
+								<input type="button" name="" id="" value="查看详情" />
+							</div>
+							<div class="deta_lef2_a2">
+								<a href=""><img title="HARIO V60系列 " src="img/de-lglass2.jpg"/></a>
+								<p title="HARIO V60系列 "><a href="">HARIO V60系列 </a></p>
+								<p>¥40.8</p>
+								<input type="button" name="" id="" value="查看详情" />
+							</div>
+							<div class="deta_lef2_a2">
+								<a href=""><img title="HARIO V60系列 " src="img/de-lglass3.jpg"/></a>
+								<p title="HARIO V60系列 "><a href="">HARIO V60系列 </a></p>
+								<p>¥40.8</p>
+								<input type="button" name="" id="" value="查看详情" />
+							</div>
+							<div class="deta_lef2_a2">
+								<a href=""><img title="HARIO V60系列 " src="img/de-lglass4.jpg"/></a>
+								<p title="HARIO V60系列 "><a href="">HARIO V60系列 </a></p>
+								<p>¥40.8</p>
+								<input type="button" name="" id="" value="查看详情" />
+							</div>
+							<div class="deta_lef2_a2">
+								<a href=""><img title="HARIO V60系列" src="img/de-lglass5.jpg"/></a>
+								<p title="HARIO V60系列 "><a href="">HARIO V60系列 </a></p>
+								<p>¥40.8</p>
+								<input type="button" name="" id="" value="查看详情" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="fr">
+					<!--右边上半部分-->
+					<div class="deta_bod_rig">
+						<p class="deta_rig_a1">顾客最喜爱商品排行榜</p>
+						<div class="deta_rig_a2">
+							<ul>
+								<li style="margin-left: 0px;">
+									<div><img src="img/paiming1.png"/></div>
+									<a href=""><img title="HARIO V60系列" src="img/shop-glass1.jpg"/></a>
+									<a title="HARIO V60系列" href="">HARIO V60系列 便携式大容量防漏塑料运动水杯塑料壶</a>
+									<p>¥40.8</p>
+									<input type="button" name="" id="" value="查看详情" />
+								</li>
+								<li>
+									<div><img src="img/paiming2.png"/></div>
+									<a href=""><img title="HARIO V60系列" src="img/shop-glass2.jpg"/></a>
+									<a title="HARIO V60系列" href="">HARIO V60系列 便携式大容量防漏塑料运动水杯塑料壶</a>
+									<p>¥40.8</p>
+									<input type="button" name="" id="" value="查看详情" />
+								</li>
+								<li>
+									<div><img src="img/paiming3.png"/></div>
+									<a href=""><img title="HARIO V60系列"src="img/shop-glass3.jpg"/></a>
+									<a title="HARIO V60系列" href="">HARIO V60系列 便携式大容量防漏塑料运动水杯塑料壶</a>
+									<p>¥40.8</p>
+									<input type="button" name="" id="" value="查看详情" />
+								</li>
+								<li>
+									<div><img src="img/paiming4.png"/></div>
+									<a href=""><img title="HARIO V60系列" src="img/shop-glass4.jpg"/></a>
+									<a title="HARIO V60系列" href="">HARIO V60系列 便携式大容量防漏塑料运动水杯塑料壶</a>
+									<p>¥40.8</p>
+									<input type="button" name="" id="" value="查看详情" />
+								</li>
+								<li>
+									<div><img src="img/paiming5.png"/></div>
+									<a href=""><img title="HARIO V60系列" src="img/shop-glass5.jpg"/></a>
+									<a title="HARIO V60系列" href="">HARIO V60系列 便携式大容量防漏塑料运动水杯塑料壶</a>
+									<p>¥40.8</p>
+									<input type="button" name="" id="" value="查看详情" />
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--右边上半部分结束-->
+					<!--右边下半部分开始-->
+					<div class="deta_bod_rig1">
+						<ul>
+							<li>商品介绍</li>
+							<li>评价  6.9万+</li>
+							<li>规格及包装</li>
+							<li>售后服务</li>
+						</ul>
+					</div>
+					<!--商品介绍-->
+					<div class="deta_bod_xuan1">
+						<!--111111-->
+						<div class="deta_bod_xuan1_a">
+							<div class="detabod_xuan1_a"><span>规格参数</span><a class="fr" href="">查看更多 »</a></div>
+							<div class="fl">
+								<p title="品牌：HARIO">品牌：HARIO</p>
+								<p title="商品毛重：1.0kg">商品毛重：200.00g</p>
+							</div>
+							<div class="fl">
+								<p title="商品名称：HARIO(lock&lock)夏季新款运动水壶塑料水杯杯子便携式学生杯HLC644GRN绿色550ML">商品名称：HARIO(lock&lock)夏季新款运动水壶塑料水杯杯子便携式学生杯HLC644GRN绿色550ML</p>
+								<p title="商品编号：4687292">商品编号：4687292</p>
+							</div>
+							<div class="fl">
+								<p title="商品编号：4687292">商品编号：4687292</p>
+							</div>
+						</div>
+						
+						<div class="deta_bod_xuan1_b">
+							<ul>
+								<li style="height: 1500px;"><img src="img/big-gass1.jpg"/></li>
+								<!--<li style="height: 539px;"><img src="img/big-glass2.jpg"/></li>-->
+								<li style="height: 711px;"><img src="img/big-glass3.jpg"/></li>
+								<li style="height: 521px;"><img src="img/big-glass4.jpg"/></li>
+								<li style="height: 900px;"><img src="img/big-glass5.jpg"/></li>
+								<!--<li style="height: 500px;"><img src="img/big-glass6.jpg"/></li>-->
+								<!--<li style="height: 600px;"><img src="img/big-glass7.jpg"/></li>-->
+								<!--<li style="height: 598px;"><img src="img/big-glass8.jpg"/></li>-->
+							</ul>
+						</div>
+					</div>
+					
+					
+					<!--售后服务-->
+					<div class="deta_bod_xuan3">
+						<div class="detabod_xuan3_a">
+							<p>1号店承诺</p>
+							<p>1号店平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！</p>
+							<p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若没有及时更新，请大家谅解！</p>
+						</div>
+						<div class="detabod_xuan3_a">
+							<p>全国联保</p>
+							<p>凭质保证书及1号店发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由1号店联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。1号店还为您提供具有竞争力的商品价格和运费政策，请您放心购买！</p>
+						</div>
+						<div class="detabod_xuan3_a">
+							<p>权利声明</p>
+							<p>1号店上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是1号店重要的经营资源，未经许可，禁止非法转载使用。</p>
+							<p>注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+						</div>
+						<div class="detabod_xuan3_a">
+							<p>价格说明</p>
+							<p>1号店价：商品在1号店平台上，不参加降价让利促销团购等活动时的常规销售价格。</p>
+							<p>参考价：商品展示的参考价，可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在1号店平台曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价、销售商门店曾经展示过的销售价等可能会与您购物时展示的不一致，该价格仅供您参考。</p>
+							<p>问题反馈：如有疑问，建议您在购买前联系客服咨询。</p>
+						</div>
+					</div>
+					<!--评价-->
+					<div class="deta_bod_xuan4">
+						<!--11111-->
+						<div class="detabod_xuan4_a"style="background: lemonchiffon;">
+							<div class="detabod_xuan4_b" style="float: left;">
+								<p>好评率</p>
+								<div>
+									<span>99</span>
+									<em>%</em>
+								</div>
+								<p>共7万+人评论</p>
+								<h4>大家觉得</h4>
+								
+							</div>
+							<div class="">
+								<span style="color: gray;margin-left: 200px;margin-top:50px;float: left;">没有标签。怎么任性？</span>
+							</div>
+						</div>
+						<!--22222-->
+						<div class="detabod_xuan4_c">
+							<ul>
+								<li class="detabod_xuan4_e">
+									<span>全部（1.6万+）</span>
+								</li>
+								<li>
+									<i class="ico active"></i>
+									<span>晒单 (4000+) </span>
+								</li>
+								<li>
+									<i class="ico active"></i>
+									<span>追评 (200+) </span>
+								</li>
+								<li>
+									<i class="ico active"></i>
+									<span>好评 (6.9万+) </span>
+								</li>
+								<li>
+									<i class="ico active"></i>
+									<span>中评 (200+) </span>
+								</li>
+								<li>
+									<i class="ico active"></i>
+									<span>差评 (200+) </span>
+								</li>
+							</ul>
+							<div class="detabod_xuan4_d fr">
+								<input type="checkbox" id="currentComment">
+								<label for="currentComment">只看当前规格评价</label>
+							</div>
+						</div>
+						<!--3333333333333-->
+						<article id="pingjia">
+							<div class="detabod_xuan4_all">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>塑料的、玻璃的、各种花纹的，看来看去最终还是选择了这款陶瓷的</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/glass4.jpg"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>包装稳妥，做工也很好，大小适合一人用，送了个量勺，活动时购入，。</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>陶瓷的不应该买红色。手工做的没有树脂的标准</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass5.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass1.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+							<div class="detabod_xuan4_all" style="display: none;">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass3.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass4.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass5.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+							<div class="detabod_xuan4_all" style="display: none;">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass1.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass3.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass1.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+							<div class="detabod_xuan4_all" style="display: none;">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun2.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass3.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/de-glass4.png"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass5.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+							<div class="detabod_xuan4_all" style="display: none;">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass4.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass4.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/de-glass1.png"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass3.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+							<div class="detabod_xuan4_all" style="display: none;">
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass5.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<!--一个评价-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass4.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass3.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+								<div class="detabod_xuan4_all_a">
+									<div>
+										<img src="img/pinglun1.jpg"/>
+									</div>
+									<div>
+										<span>公***2</span>
+									</div>
+									<p>
+										<span>评分:</span>
+										<span></span>
+									</p>
+									<p>
+										<span>内容：</span>
+										<span>买的第二个了，瓶子结实，颜色纯净透明，非常漂亮，推荐购买</span>
+									</p>
+									<p>
+										<span>晒单：</span>
+										<img src="img/de-glass2.png"/>
+									</p>
+									<p>
+										绿色    2018-09-06 19:51:28
+									</p>
+								</div>
+								<!--一个评价结束-->
+							</div>
+							<!--all评价结束-->
+						</article>
+						<!--结束-->
+					</div>
+					<!--右边下半部分结束-->
+				</div>
+				
+					
+			</div>
+			<!--下半部分结束-->
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--中间主要内容结束-->
+
+		<!--底部主要内容-->
+		
+		<div class="foot">
+			<div class="foot_ico">
+				<ul>
+					<li>
+						<img src="img/b1.png"/>
+						<p>正品保障</p>
+						<p>正品行货  放心购买</p>
+					</li>
+					<li>
+						<img src="img/b2.png"/>
+						<p>满38包邮</p>
+						<p>满38包邮  免运费</p>
+					</li>
+					<li>
+						<img src="img/b3.png"/>
+						<p>天天低价</p>
+						<p>天天低价  畅选无忧</p>
+					</li>
+					<li>
+						<img src="img/b4.png"/>
+						<p>准时送达</p>
+						<p>收到时间由你做主</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="foot_nav">
+				<ul>
+					<li>
+						<p>新手上路</p>
+						<ul>
+							<li><a href="">售后流程</a></li>
+							<li><a href="">售后流程</a></li>
+							<li><a href="">售后流程</a></li>
+							<li><a href="">售后流程</a></li>
+							<li><a href="">推荐分享说明</a></li>
+						</ul>
+					</li>
+					<li>
+						<p>配送支付</p>
+						<ul>
+							<li><a href="">货到付款区域</a></li>
+							<li><a href="">配送支付查询</a></li>
+							<li><a href="">支付方式说明</a></li>
+						</ul>
+					</li>
+					<li>
+						<p>会员中心</p>
+						<ul>
+							<li><a href="">资金管理</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">我的订单</a></li>
+						</ul>
+					</li>
+					<li>
+						<p>服务保证</p>
+						<ul>
+							<li><a href="">退换货原则</a></li>
+							<li><a href="">售后服务保证</a></li>
+							<li><a href="">产品质量保证</a></li>
+						</ul>
+					</li>
+					<li>
+						<p>联系我们</p>
+						<ul>
+							<li><a href="">网站故障报告</a></li>
+							<li><a href="">购物咨询</a></li>
+							<li><a href="">投诉与建议</a></li>
+						</ul>
+					</li>
+					<li style="padding-right: 0px;">
+						<div class="erweima">
+							<img src="img/er.gif"/>
+							<div style="color: #384649;">扫一扫关注我们!</div>
+						</div>
+						<div class="erweima1">
+							<div class="erweima1_weib"><a href="">新浪微博</a></div>
+							
+							<div class="erweima1_txun"><a href="">腾讯微博</a></div>
+							
+							<div class="erweima1_phine">
+								<p>服务热线：</p>
+								<p style="font-size: 20px; color: orangered;">400-123-4567</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="foot_about">
+				<div style="width: 1200px; padding-top: 50px;">
+					<p style="border-top: 1px solid gainsboro; padding-top: 40px;">
+						备案/许可证编号:<a href="">蜀ICP备12009302号-1-www.dingguagua.com Copyright© </a> 
+						1号店网上超市 2007-2017，<a href="">All Rights Reserved</a>  复制必究，
+						<a href="">Technical Sopport: Dgg Group</a>
+					</p>
+					<div class="foot_img">
+						<a href=""><img src="img/b_1.gif"/></a>
+						<a href=""><img src="img/b_2.gif"/></a>
+						<a href=""><img src="img/b_3.gif"/></a>
+						<a href=""><img src="img/b_4.gif"/></a>
+						<a href=""><img src="img/b_5.gif"/></a>
+						<a href=""><img src="img/b_6.gif"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部主要内容结束-->
+		
+		
+		
+		
+		
+	</body>
+</html>
+
