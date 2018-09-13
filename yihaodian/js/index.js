@@ -30,6 +30,50 @@ $(document).ready(function(){
 	$(".gouwuche-list").hide();
   })
 	
+	
+	
+	
+	
+	//购物车的加
+	        $(".gouwuche-list1-2 #add").click(function(){
+	        	var t = $(this).next();
+	        	if(t.text()==""||undefined||null){
+	        		t.text(0);
+	        	}else{
+	        		t.text(parseInt(t.text()) + 1)
+	        	}
+	        	var s = 0;
+                var p = $(this).parent().next().html();
+                if(parseInt(t.text())==""||undefined||null || isNaN(t) || isNaN(parseInt(t))){
+					t=0;
+				}
+                var a = $(this).next().text();
+				s = parseInt(a) * parseFloat(p);
+				s = s.toFixed(2);
+				var m = $(this).siblings("font");
+				m.html("¥"+s);
+	       })
+	       
+	//购物车的减
+	     $(".gouwuche-list1-2 #dow").click(function(){
+	        	var t = $(this).prev();
+	        	if(t.text()==""||undefined||null){
+	        		t.text(0);
+	        	}else{
+	        		t.text(parseInt(t.text()) - 1)
+	        	}
+	        	var s = 0;
+                var p = $(this).parent().next().html();
+                if(parseInt(t.text())==""||undefined||null || isNaN(t) || isNaN(parseInt(t))){
+					t=0;
+				}
+                var a = $(this).prev().text();
+				s = parseInt(a) * parseFloat(p);
+				s = s.toFixed(2);
+				var m = $(this).siblings("font");
+				m.html("¥"+s);
+	       })
+	
 //	旋转箭头
 //   $(".jiantou1").hover(function(){
 //   	$("xwcms").addClass("xwcms1");
@@ -38,6 +82,10 @@ $(document).ready(function(){
     $(".ad_exit").click(function(){
  		$(".adv").hide();
  	})
+	
+	
+	
+	
 	
 	//图片轮播
 			var count = 0;
