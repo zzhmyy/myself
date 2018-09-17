@@ -14,19 +14,21 @@ body{
 	z-index: 999;
 	background: rgba(0,0,0,0.3);	
 }
+.adv>div{
+	position: relative;
+	top: 30%;
+	width: 573px;
+	margin: 0px auto;
+}
 .ad_exit{
     position: absolute;
-    /*display: block;*/
-    top: 190px;
-    left: 840px;
+    display: block;
+    top: 0px;
+    right: 0px;
     z-index: 1000;
     cursor: pointer;
 }
-.adv img:nth-child(2){
-	 position: absolute;
-    top: 200px;
-    left: 350px;
-}
+
 /*刷新页面弹出广告结束*/
 .head-nav{
 	background: #f4f4f4;
@@ -380,7 +382,6 @@ h4{
 }
 .main1{
 	clear: both;
-	height: 390px;
 	border-top: 1px solid orangered;
 }
 .main-left{
@@ -550,6 +551,7 @@ h4{
 }
 
 .main2{
+	width: 100%;
 	margin-top: 15px;
 	height: 230px;
 }
@@ -559,6 +561,7 @@ h4{
 }
 .main2-2{
 	float: left;
+	width: 200px;
 	height: 230px;
 	background: #d8eefc;
 	margin-right: 5px;
