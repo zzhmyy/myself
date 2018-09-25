@@ -115,6 +115,7 @@ $(document).ready(function(){
 		    $('.btn-r').click(function () {
 		        time();
 		        return false;
+		        
 		    });
 		    $('.page_con li').mouseenter(function () {
 		        clearInterval(timer);

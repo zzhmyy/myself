@@ -98,7 +98,7 @@ $(document).ready(function(){
 				$('.deta_lef3_xin ul').animate({marginTop: 0+'px'},1000);
 			})
 			
-			//图片移动显示
+			//放大镜的图片移动显示
 			$(".deta_lef2 ul li").hover(function(){
 				var $a = $(this).index();
 				$(this).children().css({"border":"1px solid black"});
