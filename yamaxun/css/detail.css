@@ -1,0 +1,562 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*中间内容的头部第一块开始*/
+.det-main-top1 ul{
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+.det-main-top1 ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+.det-main-top1 ul li a{
+	display: block;
+	height: 31px;
+	line-height: 33px;	
+	font-size: 12px;
+}
+
+.det-main-top1 ul li a:hover{
+	text-decoration: none;
+	border-bottom: 3px solid orange;
+	color: orange;
+}
+
+/*中间内容头部的第二块开始*/
+
+.det-main-top2{
+	background:#135b70 ;
+	text-align: center;
+}
+.det-main-top3-cont{
+	margin-left: 15px !important;
+	text-align: center;
+}
+
+.det-main-top3-cont h2{
+	margin-bottom: 3px;
+	color: orange;
+}
+.det-main-top3-cont h3{
+	margin: 0;
+	margin-bottom: 5px;
+	color: gray;
+}
+.det-main-top3-cont p{
+	margin: 0;
+}
+.det-main-top3-cont p a{
+	color: #2B669A;
+}
+.det-main-top3-cont p a:hover{
+	color: orangered;
+	text-decoration: none;
+	
+}
+.det-main-top3-cont a:hover{
+	opacity: 0.6;
+}
+.det-main-top3-cont p{
+	color: grey;
+}
+
+
+/*中间内容开始*/
+.main-mid1{
+	height: 28px;
+	background: orange;
+	text-align: center;
+	
+}
+.main-mid1 p{
+	height: 28px;
+	line-height: 28px;
+}
+
+
+/*jQzoom*/
+.jqzoom{
+  border:1px solid #BBB;
+  float:left;
+  position:relative;
+  padding:0px;
+  cursor:move;
+}
+.zoomdiv {
+  z-index: 999;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width : 80px;
+  height : 50px;
+  background: #ffffff;
+  border:1px solid #CCCCCC;
+  display:none;
+  text-align: center;
+  overflow: hidden;
+}
+.jqZoomPup {
+  z-index: 999;
+  visibility: hidden;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width : 1px;
+  height: 1px;
+  border: 1px solid #aaa;
+  /*background: #ffffff url(/images/shopping/zoomlens.gif) 50% top no-repeat;*/
+  background: #ffffff 10%;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  filter: alpha(Opacity=50);
+}
+
+.img-sl{
+	width: 50px;
+	float: left;
+	margin-right: 35px;
+}
+
+.img-sl ul li img{
+	border: 2px solid white;
+	margin-bottom: 8px;
+}
+.big-img{
+    width: 410px;
+	height: 382px;
+	overflow: hidden;
+	margin-right: 0;
+}
+.big-img img{
+	width: 400px;
+	height: 380px;
+}
+.main-mid2{
+	margin-top: 20px;
+}
+.main-mid2l{
+	width: 500px;
+	float: left;
+	
+}  
+.main-mid2m{
+	width: 555px;
+	float: left;
+	margin-right: 14px;
+}  
+
+.main-mid2r{
+	/*width: 180px;*/
+	/*float: left;*/
+    /*height: 150px;*/
+    /*background: fuchsia;*/
+}
+.main-mid2m1 h3{
+	margin-top: 0px;
+}
+.main-mid2m1{
+	border-bottom:1px solid lightgray ;
+	margin-bottom: 10px;
+}
+.main-mid2m2 p{
+	color: gray;
+	margin-bottom: 0;
+}
+.main-mid2m2 p:nth-child(2) span{
+	font-size: 20px;
+}
+.main-mid2m2 p span{
+	color: orange;
+}
+.main-mid2m3{
+	margin-top: 15px;
+}
+.main-mid2m3 p{
+	margin-bottom: 0px;
+}
+.main-mid2m3 p:first{
+	color: green;
+	font-size: 18px;
+}
+.main-mid2m4{
+  margin-top: 20px;
+  
+}
+.main-mid2m4 p span{
+	color: grey;
+}
+.main-mid2m4 input{
+	background: white;
+	padding: 2px 15px;
+	margin-right: 10px;
+	border: 1px solid lightgray;
+}
+.main-mid2m5 p span{
+	color: gray;
+}
+.main-mid2m5 {
+	margin-top: 20px;
+}
+.main-mid2m5 ul li{
+	color:#949494 ;
+}
+.main-mid2m5 ul li span{
+	color: #111;
+	font-size: 13px;
+}
+
+/*中间内容的右边*/
+.det-down{
+	min-width: 50px !important;
+	width: 60px;
+}
+.down-btn{
+	width: 65px;
+	height: 26px;
+	border: 1px solid gray;
+	background: white;
+	position: relative;
+}
+.down-btn span{
+	position: absolute;
+	top: 10px;
+    left: 55px;
+}
+.title img{
+	margin-right: 3px;
+}
+.jiaru{
+	position: relative;
+}
+
+.jiaru input{
+	/*height: 30px;*/
+	border: 1px solid gray;
+}
+.jiaru img{
+	position: absolute;	
+	top: 3px;
+	left: 3px;
+}
+.jiaru{
+	/*height: 45px;*/
+	margin-bottom: 8px;
+}
+.main-mid2r{
+	width: 250px;
+	/*background: palevioletred;*/
+	float: left;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+}
+.main-mid2r a{
+	
+}
+.main-mid2r{
+     font-size: 13px;
+}
+.main-mid2r-cont{
+	width: 250px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.dingou{
+	height: 50px;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+	text-align: center;
+}
+.dingou a{
+	/*padding-top: 15px !important;
+	padding-bottom: 15px;*/
+	height: 50px;
+	line-height: 50px;
+}
+
+.order {
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .order .line {
+            display: inline-block;
+            width: 50px;
+            border-top: 1px solid #ccc ;
+        }
+        .order .txt {
+            color: #686868;
+            /*vertical-align: -4px;*/
+     }
+ 
+/*星星图片*/    
+.xingxing{
+	width: 100px;
+	float: left;
+}
+
+/*进度条开始*/
+.jin-cont p{
+	
+}
+.jin-l{
+	width: 50px;
+	float: left;
+}
+.jin-l ul li a{
+	color: #269ABC;
+}
+
+.jin-m{
+	width: 150px;
+	float: left;
+	margin-right: 12px;
+}
+.jin-r{
+	width: 30px;
+	float: left;
+}
+
+.jindu > div{
+	margin-bottom: 5px;
+}
+/*进度调结束*/
+
+
+.main-mid2r-con p{
+	margin-bottom: 0;
+}
+.last-btn input{
+	background: linear-gradient(to bottom,#f7f8fa,#e7e9ec) !important;
+	margin-top: 10px;
+}
+.containerl{
+	width: 400px;
+	/*height: 200px;*/
+	float: left;
+	/*background: palevioletred;*/
+	margin-right: 100px;
+}
+.cont h2{
+	margin-top: 10px;
+}
+.containerr{
+	width: 400px;
+	/*height: 200px;*/
+	float: left;
+	/*background: forestgreen;*/
+}
+.cont{
+	width: 900px;
+	margin: 0 auto;
+	
+}
+.containerl1{
+	padding-bottom: 15px;
+}
+.containerl2{
+	border-top: 1px solid lightgray;
+	padding-top: 15px;
+}
+.r1{
+	margin-bottom: 20px;
+}
+.biao{
+	padding-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+}
+.que-ans{
+	padding-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+}
+
+.question{
+	width:1000px ;
+    margin-bottom: 15px;
+}
+.answer{
+	margin-bottom: 20px;
+}
+.answerl{
+	width: 65px;
+	float: left;
+	/*background: forestgreen;*/
+	border-right: 1px solid lightgray;
+}
+.answerr{
+	width: 950px;
+	float: left;
+	margin-left: 10px;
+	
+}
+.answerl p{
+	margin-bottom: 0;
+}
+.answerr-l{
+	width: 100px;
+	float: left;
+	font-size: 16px;
+}
+.answerr-r{
+	width: 850px;
+	float: left;
+	
+}
+.answerr-r p:nth-child(4){
+	background: url(../img/double-jian.png) no-repeat 0px 8px;
+}
+.answerr-r p:nth-child(4) a{
+	padding-left: 15px;
+}
+.answerr-r input{
+	width:250px;
+	height: 30px;
+
+}
+/*.mid-bottom{
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}*/
+.pingjia{
+	margin-top: 15px;
+}
+.pingjial{
+	width: 800px;
+	/*height: 300px;*/
+    /*background: gold;*/
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 20px;
+    /*border-: 3px solid red;*/
+}
+.pingjial-1{
+	border-bottom: 1px solid lightgray;
+}
+.pingjiar{
+	width: 500px;
+	/*height: 300px;*/
+	/*background: fuchsia;*/
+	float: left;
+}
+.pingjial-h p{
+	margin-bottom: 0;
+}
+.pop-p p{
+	margin-bottom: 0;
+}
+.pop-con{
+	padding-top: 15px;
+	padding-left: 20px;
+}
+.x-jindul{
+	width: 300px;
+	float: left;
+	/*background: forestgreen;*/
+	/*height: 200px;*/
+}
+.x-jindur{
+	width: 300px;
+	float: left;
+	/*height: 200px;*/
+	padding-top: 50px;
+}
+.what p span:first-child{
+	font-size: 18px;
+}
+.what2-l{
+	width: 200px;
+	/*height: 100px;*/
+	float: left;
+	/*background: chartreuse;*/
+}
+.what2-r{
+	width: 200px;
+	/*height: 100px;*/
+	float: left;
+	/*background: fuchsia;*/
+}
+.what2-l h5{
+	margin-bottom: 0;
+}
+.panduan{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mention{
+	width: 450px;
+	font-size: 13px;
+	
+}
+.more-mention p{
+	/*padding-left: 20px;*/
+	background:url(../img/double-jian.png) no-repeat 5px 8px;
+}
+.more-mention p a{
+	padding-left: 20px;
+}
+.mention span{
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-right: 14px;
+	margin-bottom: 10px;
+	float: left;
+	background: #D7E8EA;
+	height: 30px;
+	line-height: 30px;
+	
+}
+.biaoqing{
+	background: url(../img/biaoqing.png) no-repeat 0px 0px;
+	height: 30px;
+}
+.biaoqing span:first-child a{
+	padding-left: 40px;
+}
+.pingjiar-img img{
+	float: left;
+    margin-right: 10px;
+}
+.pingjiar-r{
+	margin-bottom: 10px;
+}
+.pingjiar-r p{
+	margin-bottom: 0;
+}
+.pingjiar-r p:nth-child(5) span{
+	color: green;
+}
+.pingjiar-s p{
+	margin-bottom: 0;
+}
+.pingjiar-s span{
+	color: gray;
+	border: 1px solid darkgray;
+	padding: 4px 5px;
+	padding-bottom: 5.8px;
+	border-right: none;
+}
+.pingjiar-s{
+	position: relative;
+}
+.pingjiar-s input:nth-child(4){
+	top: 25px;
+	position: absolute;
+	margin-left: 5px;
+	width: 80px;
+}
+/*右边问题的弹出框*/
+.imp-con{
+	/*border: 1px solid lightgrey;*/
+	border-radius: 3px;
+}
+.imp-con span{
+	padding: 5px;
+	border: 0.5px solid red !important;
+	box-shadow:0px 0px 1px 1px orangered !important;
+	margin-right: 5px;
+}

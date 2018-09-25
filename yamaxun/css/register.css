@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*ul{
+	margin: 0;
+	padding: 0;
+}*/
+.box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.login-Amazon{
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.login-box{
+	width: 400px;
+	margin: 0 auto;
+	border: 1px solid lightgrey;
+}
+.login-info{
+	width: 300px;
+	margin: 0 auto;
+}
+.login-button input{
+	background: orange;
+}
+.login-info input{
+	border: 1px solid dimgray;
+}
+.dropdown{
+	width: 300px;
+	margin: 0 auto;
+}
+.dropdown1{
+	display: none;
+}
+.dropdown1 ul li{
+	list-style: none;
+}
+.down-list a{
+	text-decoration: none;
+	/*color: #337AB7;*/
+	/*background: orange;*/
+	
+}
+.down-list a:hover{
+	text-decoration: underline;
+}
+.problem{
+	width: 180px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.create{
+	width: 400px;
+	margin: 0 auto;
+	
+}
+.create input{
+	background: lavender;
+}
+.footer{
+	width: 340px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+.footer ul li{
+	list-style: none;
+	float: left;
+	margin-right: 15px;
+	
+}
+.border{
+	border: 1px solid red !important;
+	box-shadow:0px 0px 1px 1px orange !important;
+}

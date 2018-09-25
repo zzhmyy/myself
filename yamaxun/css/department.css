@@ -1,0 +1,34 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.department-main{
+	width: 1150px;
+	margin: 0 auto;
+	/*background: red;*/
+	
+}
+.mian-bottom{
+	border-top: 1px solid lightgrey;
+	padding-top: 15px;
+}
+.department-main1{
+    width: 270px;
+    float: left;
+    margin-right: 23px;
+    /*background: pink;*/
+    float: left;
+}
+.department-main1 li{
+	line-height: 25px;
+}
+.department-main1-1 ul li a{
+	color: #222222;
+}
+.department-main1-1{
+	background: #f7f7f7;
+	margin-bottom: 25px;
+}
+.mian-bottom a{
+	color: mediumslateblue;
+}

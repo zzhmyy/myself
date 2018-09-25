@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<title>Department</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/department.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/default.js" ></script>
+		<script type="text/javascript" src="js/department.js" ></script>
+		
+	</head>
+	<body>
+		<div class="zhezhao">
+		</div>
+		<header>
+			<div class="container-fluid">
+				<a href=""><img src="img/head.jpg" style="width: 100%;"/></a>
+			</div>
+			<!--搜索栏-->
+			<div class="main-top">
+				<div class="search container-fluid">			
+				<div class="row">
+					<!--搜索一-->
+					 <div class="search1 pull-left clo-lg-2 clo-md-2 clo-sm-2 col-xs-2">
+						<div class="search1-logo">
+							<img src="img/default-logo.png"/>
+						    <a href="#">try prime</a>
+						</div>						
+					 </div>
+					
+	    
+					<!--搜索二-->
+					<div class="search2 pull-left clo-lg-7 clo-md-7 clo-sm-7 col-xs-7">					
+						<form>
+					        <div class="input-group">
+								<div for="username" class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+										<font class="search2-menu">Arte</font>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu search2-list" style="overflow-y: auto; height: 250px;">
+										<li><a href="#">Tolods los departments</a></li>
+										<li><a href="#">Skills</a></li>
+										<li><a href="#">Aparatos</a></li>
+										<li><a href="">Auto</a></li>
+										<li><a href="#">Bete</a></li>
+										<li><a href="#">Tolods los departments</a></li>
+										<li><a href="#">Skills</a></li>
+										<li><a href="#">Aparatos</a></li>
+										<li><a href="">Auto</a></li>
+										<li><a href="#">Bete</a></li>
+										
+									</ul>
+								</div>
+							    
+							    <input type="text" name="" id="username" value="" class="form-control"/> 
+							    <label class="input-group-addon" style="background-color: sandybrown;"><span class="glyphicon glyphicon-search"></span></label>				                         
+					        </div>
+					    </form>    
+					</div>
+					
+					<!--搜索三-->
+					<div class="search3 pull-right clo-lg-3 clo-md-3 clo-sm-3 col-xs-3">
+						<a href=""><img src="img/de-search3.jpg" class="img-responsive"/></a>
+					</div>
+			    </div> 
+		      </div>
+		      <!--搜索结束-->
+		      <!--导航条开始-->
+		      <div class="nav">
+		      	<!--导航左边地址开始-->
+		      	
+			      	 <div class="address" data-toggle="modal" data-target="#myModal">
+			      	 	<a href="#">
+			      	 		<span>Deliver to</span>
+			      	 		<font>China</font> 	
+			      	 	</a>	
+			      	 </div>
+			      	 
+						<!-- 模态框（Modal） -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 50px;width: 500ox;">
+								<div class="modal-dialog" style="width: 410px;">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+												&times;
+											</button>
+											<h4 class="modal-title" id="myModalLabel">
+												Elige tu ubicación
+											</h4>
+										</div>
+										<div class="modal-body">
+											<div class="tan-content">
+											<p>Las opciones y velocidades de envío pueden variar según la dirección</p>
+											<input type="button" name="" id="" value="envío pueden variar según la dirección" class="btn-warning form-control " />
+										    <div class="order">
+										        <span class="line"></span>
+										        <span class="txt">New to Amazon?</span>
+										        <span class="line"></span>
+									    	</div>
+									    	<div class="shuru">
+									    		<input type="text" name="" id="" value="" class="tan-input form-control"/><!--<input type="button" name="" id="" value="" class="btn-primary shuru-btn"/>-->
+									    	</div>
+									    	
+									     </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+											</button>
+											<button type="button" class="btn btn-warning">
+												List go
+											</button>
+										</div>
+									</div><!-- /.modal-content -->
+								</div><!-- /.modal -->
+							</div>
+						<!--0000000000000000000000000-->	
+		      	 <!--地址结束-->
+		      	 
+		      	 <!--导航中间-->
+		      	 <div class="nav-mid">		      	 	
+		      	 	<div style="position: relative;" class="pop" class="pull-left" >
+			      	 	<div class="department">
+	                        <!--<button type="button" 
+					            title="Popover title" data-container="body"
+					             data-placement="bottom" data-trigger="hover"
+					            data-content="底部的 Popover 中的一些内容 —— destroy 方法">
+					                Ddepartment<span class="caret"></span>
+	                        </button>-->
+	                        <a href="Department.html">Ddepartment</a><span class="caret"></span>
+	
+	                    </div>
+	                    
+	                    <div class="popover fade bottom in pop-list" role="tooltip" id="" style="top: 20px; left: -50px;">
+	                       <div class="arrow" style="position: absolute; left: 130px;"></div>
+	                       <!--<div class="clearfix" style="width: 570px;">-->
+		                       	<div class="pull-left down1">
+			                        <ul class="list-unstyled" style="padding: 10px;font-size: 13px;">
+			                        	<li style="color: orange;"><a href="">Prime Video</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>	                    	  
+			                        	<li><a href="">Amazon Music</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Tienda Apps para Android</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Echo y Alexa</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Tablets Fire</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>		                      	
+			                        	<li><a href="">Fire TV</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<hr width="220px" style="margin: 0;"/>
+			                        	<li><a href="">E-readers Kindle y Libros</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Libros y Audible</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Películas, Música y Juegos</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Electrónicos, computadoras y oficina</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Hogar, Jardín y Herramientas</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Alimentos y Abarrotes</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Belleza y Salud</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Ropa, Calzado y Joyería</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<hr width="220px" style="margin: 0;"/>
+			                        	<li><a href="">Handmade</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Deportes y Aire libre</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Automotriz e Industrial</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Servicios para el hogar</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Productos de pago y crédito</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        	<li><a href="">Mapa de Tiendas</a><span class="glyphicon glyphicon-chevron-right pull-right" ></span></li>
+			                        </ul>
+			                    </div>  
+			                    <!--右侧菜单开始-->
+			                        <div class="pull-left down2">
+			                        	<!--<ul>
+			                        		<li>-->
+			                        			<!--第一个-->
+				                        		<center class="pop2" >
+				                        			<!--左边-->
+				                        			<div class="pop2-1 pull-left" style="color: black; width: 250px;">
+				                        				<h4 style="color: orange;margin: 0;"class="text-left">Prime Video</h3>
+				                        				<ul class="list-unstyled text-left pop2l" style="font-size: px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+					                        				</ul>	
+					                        				
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+					                        				</ul>
+					                        				
+					                        				<ul class="list-group list-unstyled">	
+					                        					<li><a href="">Canales</a></li>
+					                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+					                        				</ul>
+					                        				
+					                        				<hr width="220px" style="margin: 0;"/>
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Alquilar o Comprar</a><li>
+				                        					    <li><a href="">Canales</a></li>
+				                        					</ul> 
+				                        					
+				                        					<ul class="list-group list-unstyled">
+				                        					    <li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					    <li><a href="">Alquilar o Comprar</a>
+				                        			        </ul> 
+				                        					
+				                        				</ul>	
+				                        			</div>
+				                        			<!--右边-->
+				                        			<div class="pop2-1 pull-left" style="color: black;margin-left: 10px;width: 180px;">
+				                        				<h4 style="color: orange;margin: 0;">Más para explorar</h3>
+				                        				<ul class="list-unstyled text-left pop2r" style="font-size: 13px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en Videos</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+				                        					</ul>
+				                        					
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+				                        					</ul>
+				                        					
+				                        					
+				                        					<!--<li><a href="">Canales</a></li>
+				                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					<li><a href="">Alquilar o Comprar</a><p>-->			        
+				                        			  </ul>	
+				                        			</div>
+				                        			<div class=""style="clear: both;"></div>
+				                        			<img src="img/nav-down .png"/>
+				                        		</center>
+			                        		
+			                        		<!--<li>-->
+			                        			<!--第二个-->
+			                        	
+				                        		<!--<center class="pop2" style="background: url(img/det-3.png);">
+				                        			<div class="pop2-1" style="color: black;">
+				                        				aaaaaaaaaaaa
+				                        			</div>
+				                        			<div class="pop2-2">
+				                        				
+				                        			</div>
+				                        		</center>-->
+				                        		
+				                        		
+				                        		<center class="pop2" >
+				                        			<!--左边-->
+				                        			<div class="pop2-1 pull-left" style="color: black; width: 250px;">
+				                        				<h4 style="color: orange;margin: 0;"class="text-left">Prime Video</h3>
+				                        				<ul class="list-unstyled text-left pop2l" style="font-size: px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+					                        				</ul>	
+					                        				
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+					                        				</ul>
+					                        				
+					                        				<ul class="list-group list-unstyled">	
+					                        					<li><a href="">Canales</a></li>
+					                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+					                        				</ul>
+					                        				
+					                        				<hr width="220px" style="margin: 0;"/>
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Alquilar o Comprar</a><li>
+				                        					    <li><a href="">Canales</a></li>
+				                        					</ul> 
+				                        					
+				                        					<ul class="list-group list-unstyled">
+				                        					    <li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					    <li><a href="">Alquilar o Comprar</a>
+				                        			        </ul> 
+				                        					
+				                        				</ul>	
+				                        			</div>
+				                        			<!--右边-->
+				                        			<div class="pop2-1 pull-left" style="color: black;margin-left: 10px;width: 180px;">
+				                        				<h4 style="color: orange;margin: 0;">Más para explorar</h3>
+				                        				<ul class="list-unstyled text-left pop2r" style="font-size: 13px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en Videos</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+				                        					</ul>
+				                        					
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+				                        					</ul>
+				                        					
+				                        					
+				                        					<!--<li><a href="">Canales</a></li>
+				                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					<li><a href="">Alquilar o Comprar</a><p>-->			        
+				                        			  </ul>	
+				                        			</div>
+				                        			<div class=""style="clear: both;"></div>
+				                        			<img src="img/nav-down .png"/>
+				                        		</center>
+			                        		<!--</li>-->
+			                        		
+			                        		<!--<li>-->
+			                        			<!--第三个-->
+			                        	
+				                        		<center class="pop2" >
+				                        			<!--左边-->
+				                        			<div class="pop2-1 pull-left" style="color: black; width: 250px;">
+				                        				<h4 style="color: orange;margin: 0;"class="text-left">Prime Video</h3>
+				                        				<ul class="list-unstyled text-left pop2l" style="font-size: px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+					                        				</ul>	
+					                        				
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+					                        				</ul>
+					                        				
+					                        				<ul class="list-group list-unstyled">	
+					                        					<li><a href="">Canales</a></li>
+					                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+					                        				</ul>
+					                        				
+					                        				<hr width="220px" style="margin: 0;"/>
+					                        				<ul class="list-group list-unstyled">
+					                        					<li><a href="">Alquilar o Comprar</a><li>
+				                        					    <li><a href="">Canales</a></li>
+				                        					</ul> 
+				                        					
+				                        					<ul class="list-group list-unstyled">
+				                        					    <li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					    <li><a href="">Alquilar o Comprar</a>
+				                        			        </ul> 
+				                        					
+				                        				</ul>	
+				                        			</div>
+				                        			<!--右边-->
+				                        			<div class="pop2-1 pull-left" style="color: black;margin-left: 10px;width: 180px;">
+				                        				<h4 style="color: orange;margin: 0;">Más para explorar</h3>
+				                        				<ul class="list-unstyled text-left pop2r" style="font-size: 13px;">
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Todo en Videos</a></li>
+					                        					<li><a href="">Todo en series de TV, películas y más</a></li>
+				                        					</ul>
+				                        					
+				                        					<ul class="list-group list-unstyled">
+					                        					<li><a href="">Incluido en Prime</a></li>
+					                        					<li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+				                        					</ul>
+				                        					
+				                        					
+				                        					<!--<li><a href="">Canales</a></li>
+				                        					<li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        					<li><a href="">Alquilar o Comprar</a><p>-->			        
+				                        			  </ul>	
+				                        			</div>
+				                        			<div class=""style="clear: both;"></div>
+				                        			<img src="img/nav-down .png"/>
+				                        		</center>
+			                        		<!--</li>
+			                        	</ul>-->
+
+		                        </div>
+
+	                    </div>
+  
+                    </div>
+                    
+                    
+                    
+
+                    
+                    
+		      	 	   
+		      	 	<div class="nav-list ">
+		      	 		<ul class="nav nav-pills">
+			      	 		<li><a href="#">Your Amazon.com</a></li>
+			      	 		<li><a href="#">oday's Deals</a></li>
+			      	 		<li><a href="#">Gift Cards</a></li>
+			      	 		<li><a href="#">Registry</a></li>
+			      	 		<li><a href="#">Sell</a></li>
+			      	 		<li><a href="#">Treasure Truck</a></li>
+			      	 	</ul>
+			      	 	
+		      	 	</div>		      	 	
+		      	 </div>		      	 
+		      	 <!--导航中间结束-->
+		      	 <!--导航右边开始-->
+		      	 <div class="nav-right">
+		      	 	<!--右边第一个弹出框开始-->
+		      	 	<div style="position: relative;" class="pop" class="pull-left">
+		      	 		<div class="nav-right1">
+		      	 			<p>ES</p>
+		      	 	        <p><img src="img/de-globle.png"/><span class="caret"></span></p> 
+		      	 		</div>
+		      	 		<div class="popover fade bottom in pop-list" role="tooltip" id="" style="left: 860px;top:28px">
+	                       <div class="arrow" style="position: absolute; top: -10px;"></div>  
+		      	 		    <div class="pop_r1">
+		      	 		    	<div class="r1l">
+		      	 		    		<img src="img/de-popr1.png"/>
+		      	 		    		<img src="img/de-pop-r2.png"/>
+		      	 		    	</div>
+		      	 		    	<div class="r1r">
+		      	 		    		<p>English - EN</p>
+		      	 		    	    <p>Español - ES</p>
+		      	 		    	    <p><a href="">Más información</a></p>
+		      	 		    	</div>
+		      	 		    	
+		      	 		    </div>
+		      	 		</div>     	 	    
+		      	 	</div>
+		      	 	<!--右边第一个弹出框结束-->
+		      	 	
+		      	 	<!--右边第二个弹出框开始-->
+		      	 	<div style="position: relative;" class="pop" class="pull-left">
+		      	 		<a href="login.html" class="nav-right2">
+			      	 		<p>Hola. Identifícate</p>
+			      	 	    <p>Cuenta y Listas<span class="caret"></span></p>      	 	    
+		      	 	    </a>
+		      	 	   <div class="popover fade bottom in pop-list" role="tooltip" id="" style="left: 850px;top:25px">
+	                       <div class="arrow" style="position: absolute; top: -10px;"></div> 
+	                       <div class="nav-right2-content">
+	                       	
+	                       	   <div class="nav-right2-content1">
+	                       	   	   <input type="button" name="" id="" value="Identifícate" class="btn-warning "/>
+	                       	   	   <p>?Eres un cliente nuevo!</p>
+	                       	   	   <a href="register.html">Empieza aquí.</a>
+	                       	   </div>
+	                       	   
+	                       	   <div class="nav-right2-content2">
+	                       	   	    <div class="nav-right2-content2-1">
+	                       	   	    	<h4 style="color: orangered;">Más para explorar</h4>
+				                           <ul class="list-unstyled">
+				                        	  <li><a href="">Todo en Videos</a></li>
+				                              <li><a href="">Todo en series de TV, películas y más</a></li>
+				                        	  <li><a href="">Incluido en Prime</a></li>
+				                        	  <li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+				                        	  <li><a href="">Canales</a></li>
+				                        	  <li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        	  <li><a href="">Alquilar o Comprar</a><p>										        
+				                            </ul>				
+	                       	   	    </div>
+	                       	   	    <div class="nav-right2-content2-2">
+	                       	   	    	<h4 style="color: orangered;">explorar</h4>
+				                           <ul class="list-unstyled">
+				                        	  <li><a href="">Todo en Videos</a></li>
+				                              <li><a href="">Todo en series de TV, películas y más</a></li>
+				                        	  <li><a href="">Incluido en Prime</a></li>
+				                        	  <li><a href="">Originales de Amazon, exclusivas y mucho más</a></li>
+				                        	  <li><a href="">Canales</a></li>
+				                        	  <li><a href="">HBO, SHOWTIME, STARZ y más</a></li>
+				                        	  <li><a href="">Alquilar o Comprar</a><p>										        
+				                            </ul>	
+	                       	   	    </div>
+	                       	   </div>
+	                       </div>
+		      	 	   </div>
+		      	 	</div>
+		      	 	<!--右边第二个弹出框结束-->
+		      	 	
+		      	 	<div class="nav-right3">
+		      	 	    <p>Predios</p>      	 	    
+		      	 	</div>
+		      	 	
+		      	 	<!--右边导航第三个弹出框开始-->
+		      	 	<div style="position: relative;" class="pop" class="pull-left">
+		      	 		<div class="nav-right3">
+		      	 	      <p>Prueba Prime<span class="caret"></span></p>      	 	    
+		      	 	    </div>
+		      	 	    <div class="popover fade bottom in pop-list" role="tooltip" id="" style="left: 1030px;top:20px">
+	                       <div class="arrow" style="position: absolute; top: -10px;"></div> 
+		      	 	        <div class="nav-right3-content">
+		      	 	        	<img src="img/de-pop-r3_2.png"/>
+		      	 	        	<p>Disfruta envío rápido y gratis </p>
+		      	 	        	<p>en más de 100 millones de </p>
+		      	 	        	<p>productos cuando empiezas tu </p>
+		      	 	        	<p>prueba gratis de 30 días</p>
+		      	 	        	<input type="button" name="" id="" value="Prueba Prime" class="btn-warning"/>
+		      	 	        	<img src="img/de-pop-r3.png" width="110px" height="130px"/>
+		      	 	        </div>
+		      	 	        
+		      	 	        
+		      	 	    </div>
+		      	 	</div>
+		      	 	
+		      	 	<!--右边导航第三个弹出框结束-->
+		      	 	
+		      	 	<div class="nav-right4">
+		      	 	   <a href="gouwucar.html" class="gouwu-car">
+		      	 	   	  <span>0</span>
+		      	 	   </a>
+		      	 	   <font>Carrito</font>
+		      	 	</div>     	 	
+		      	 </div>
+		      	 <!--导航右边结束-->
+	 
+		      </div>
+		      <!--导航结束-->
+			</div>						
+		</header>
+		
+	     <!--中间内容-->
+	     <div class="department-main clearfix">
+	     	<h3 class="text-center">LA SELECCIÓN MÁS GRANDE DE LA TIERRA</h3>
+	     	<!--第一块-->
+	     	<div class="department-main1">	     		
+	     		<div class="department-main1-1">
+	     			<img src="img/depar4.png"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     		
+	     		<div class="department-main1-1">
+	     			<img src="img/depar1.png"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     		
+	     		<div class="department-main1-1">
+	     			<img src="img/depart5.png"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     		
+	     		
+	     	</div>
+	     	<!--第二块-->
+	     	<div class="department-main1">
+			     	 <div class="department-main1-1">
+			     			<img src="img/depar2.png"/>
+			     		<h4>Libros y Audible</h4>
+			     		<ul class="list-unstyled">
+			     			<li><a href="">Incluido en Prime</a></li>
+			     			<li><a href="">Canales</a></li>
+			     			<li><a href="">Alquilar o Comprar</a></li>
+			     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+			     			<li><a href="">Ver en Cualquier Parte</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			<li><a href="">Prime Originals</a></li>
+			     			<li><a href="">Próximamente en Prime</a></li>
+			     			<li><a href="">Tu Lista de</a></li>	     			
+			     			<li><a href="">Ver en Cualquier Parte</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			<li><a href="">Prime Originals</a></li>
+			     			<li><a href="">Próximamente en Prime</a></li>
+			     			<li><a href="">Tu Lista de</a></li>
+			     			<li><a href="">Tu Lista de</a></li>	     			
+			     			<li><a href="">Ver en Cualquier Parte</a></li>	
+			     		</ul>
+			     	</div>
+			     	
+			     	<div class="department-main1-1">
+		     			<img src="img/depart3.png"/>
+			     		 <h4>Prime Video</h4>
+			     		 <ul class="list-unstyled">
+			     			<li><a href="">Incluido en Prime</a></li>
+			     			<li><a href="">Canales</a></li>
+			     			<li><a href="">Alquilar o Comprar</a></li>
+			     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+			     			<li><a href="">Ver en Cualquier Parte</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			
+			     		</ul>
+	     		    </div>
+	     		    
+	     		    <div class="department-main1-1">
+	     			<img src="img/depart6.png"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     	
+	     	   
+	     	</div>
+	     		
+	     	<!--第三块-->
+	     	<div class="department-main1">
+	     		<div class="department-main1-1">
+		     		<img src="img/depar3.jpg"/>
+		     		<h4>Libros y Audible</h4>
+		     		<ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     			
+		     		</ul>
+	     		</div>
+	     		
+	     		<div class="department-main1-1">
+		     			<img src="img/depart4.png"/>
+			     		 <h4>Prime Video</h4>
+			     		 <ul class="list-unstyled">
+			     			<li><a href="">Incluido en Prime</a></li>
+			     			<li><a href="">Canales</a></li>
+			     			<li><a href="">Alquilar o Comprar</a></li>
+			     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+			     			<li><a href="">Ver en Cualquier Parte</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			
+			     		</ul>
+	     		    </div>
+	     		    
+	     		    
+	     		    <div class="department-main1-1">
+	     			<img src="img/depart7.png"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     		
+	     	</div>
+	     	
+	     	
+	     	<!--第四块-->
+	     	<div class="department-main1"style="margin-right: 0;">
+	     		<div class="department-main1-1">
+		     		<img src="img/depart2.png"/>
+		     		<h4>Libros y Audible</h4>
+		     		<ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     		
+	     		<div class="department-main1-1">
+		     			<img src="img/depart.png"/>
+			     		 <h4>Prime Video</h4>
+			     		 <ul class="list-unstyled">
+			     			<li><a href="">Incluido en Prime</a></li>
+			     			<li><a href="">Canales</a></li>
+			     			<li><a href="">Alquilar o Comprar</a></li>
+			     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+			     			<li><a href="">Ver en Cualquier Parte</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			<li><a href="">Prime Originals</a></li>
+			     			<li><a href="">Próximamente en Prime</a></li>
+			     			<li><a href="">Tu Lista de</a></li>
+			     			<li><a href="">Primeros Pasos</a></li>
+			     			<li><a href="">Prime Originals</a></li>
+			     			<li><a href="">Próximamente en Prime</a></li>
+			     			<li><a href="">Tu Lista de</a></li>
+			     		</ul>
+	     		   </div>
+	     		   
+	     		   
+	     		   <div class="department-main1-1">
+	     			<img src="img/depart8.jpg"/>
+		     		 <h4>Prime Video</h4>
+		     		 <ul class="list-unstyled">
+		     			<li><a href="">Incluido en Prime</a></li>
+		     			<li><a href="">Canales</a></li>
+		     			<li><a href="">Alquilar o Comprar</a></li>
+		     			<li><a href="">Tu Lista de VideosTu Videoteca</a></li>
+		     			<li><a href="">Ver en Cualquier Parte</a></li>
+		     			<li><a href="">Primeros Pasos</a></li>
+		     			<li><a href="">Prime Originals</a></li>
+		     			<li><a href="">Próximamente en Prime</a></li>
+		     			<li><a href="">Tu Lista de</a></li>
+		     		</ul>
+	     		</div>
+	     	   </div>
+	     	  <div class=""style="clear: both;">
+	     	  	
+	     	  </div>
+	     	  
+	     	  
+	     	  <!--中间的底部-->
+	     	<div class="mian-bottom ">
+	     		<ul class="list-unstyled">
+	     			<li><a href=""><strong>Gangas: Ofertas del Día</strong>,Ofertas y Gangas, Outlet, Warehouse Deals, Woot!</a></li>
+	     			<li><a href=""><strong>Regalos y Listas: Wish List</strong>,Tarjetas de regalo, Ideas de regalos , Lista de boda, Lista de bebé, Tu biblioteca multimedia</a></li>
+	     			<li><a href=""><strong>Gangas: Ofertas del Día</strong>,Ofertas y Gangas, Outlet, Warehouse Deals, Woot!</a></li>
+	     			<li><a href=""><strong>Regalos y Listas: Wish List</strong>,Tarjetas de regalo, Ideas de regalos , Lista de boda, Lista de bebé, Tu biblioteca multimedia</a></li>
+	     			<li><a href=""><strong>Gangas: Ofertas del Día</strong>,Ofertas y Gangas, Outlet, Warehouse Deals, Woot!</a></li>
+	     			<li><a href=""><strong>Regalos y Listas: Wish List</strong>,Tarjetas de regalo, Ideas de regalos , Lista de boda, Lista de bebé, Tu biblioteca multimedia</a></li>
+	     			<li><a href=""><strong>Gangas: Ofertas del Día</strong>,Ofertas y Gangas, Outlet, Warehouse Deals, Woot!</a></li>
+	     			<li><a href=""><strong>Regalos y Listas: Wish List</strong>,Tarjetas de regalo, Ideas de regalos , Lista de boda, Lista de bebé, Tu biblioteca multimedia</a></li>
+
+	     		</ul>
+	     	</div>
+	     </div>
+		
+		
+		
+		
+		<!--底部开始-->
+	  <div class="footer clearfix" >
+	  	  <div class=" text-center ">
+		   	   <div class="foot1" >
+		   	 	   <a href="">lnicio de pagina</a>
+		   	   </div>
+	      </div>
+	      
+	      <div class=" foot2 clearfix">
+	      	 <div class="foot2-content" style="width: 800px; text-align: center;">
+	      	  <div class="foot2-1">
+	      	  	<h3>Conócenos</h3>
+	      	  	  <ul class="list-unstyled">
+	      	  	  	<li><a href="">Trabaja en Amazon</a></li>
+	      	  	  	<li><a href="">Blog</a></li>
+	      	  	  	<li><a href="">Acerca de Amazon</a></li>
+	      	  	  	<li><a href="">Relaciones con los inversionistas</a></li>
+	      	  	  	<li><a href="">Dispositivos Amazon</a></li>
+	      	  	  </ul>
+	      	  </div>
+	      	  
+	      	  
+	      	   <div class="foot2-1">
+	      	  	<h3>Conócenos</h3>
+	      	  	  <ul class="list-unstyled">
+	      	  	  	<li><a href="">Trabaja en Amazon</a></li>
+	      	  	  	<li><a href="">Blog</a></li>
+	      	  	  	<li><a href="">Acerca de Amazon</a></li>
+	      	  	  	<li><a href="">Relaciones con los inversionistas</a></li>
+	      	  	  	<li><a href="">Dispositivos Amazon</a></li>
+	      	  	  </ul>
+	      	  </div>
+	      	  
+	      	  
+	      	   <div class="foot2-1">
+	      	  	<h3>Conócenos</h3>
+	      	  	  <ul class="list-unstyled">
+	      	  	  	<li><a href="">Trabaja en Amazon</a></li>
+	      	  	  	<li><a href="">Blog</a></li>
+	      	  	  	<li><a href="">Acerca de Amazon</a></li>
+	      	  	  	<li><a href="">Relaciones con los inversionistas</a></li>
+	      	  	  	<li><a href="">Dispositivos Amazon</a></li>
+	      	  	  </ul>
+	      	  </div>
+	      	  
+	      	   <div class="foot2-1">
+	      	  	<h3>Conócenos</h3>
+	      	  	  <ul class="list-unstyled">
+	      	  	  	<li><a href="">Trabaja en Amazon</a></li>
+	      	  	  	<li><a href="">Blog</a></li>
+	      	  	  	<li><a href="">Acerca de Amazon</a></li>
+	      	  	  	<li><a href="">Relaciones con los inversionistas</a></li>
+	      	  	  	<li><a href="">Dispositivos Amazon</a></li>
+	      	  	  </ul>
+	      	  </div>
+	      	  </div> 
+	      </div>
+	      
+	      
+	      
+	      <div class="foot3 clearfix">
+	      	<div class="foot3-content">
+	      	  <div class="foot3-1 pull-left">
+	      	  	  <img src="img/default-logo.png"/>
+	      	  </div>
+	      	  
+	      	  <div class="foot3-1">
+	      	  	  <div class="foot3-tanl pull-left">
+	      	  	  	 <a href="">Espand</a>
+	      	  	  </div>
+	      	  	  <div class="foot3-tanr pull-left">
+	      	  	  	 <a href="">Estados Unidos</a>
+	      	  	  </div>
+	      	  </div>
+	      	  
+	      	</div>  
+	      </div>
+	      
+	      <div class="foot4 clearfix">
+	      	<div class="foot4-content">
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	 
+	      	 
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	 
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	 
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	 
+	      	 
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	 
+	      	 
+	      	 <div class="foot4-1">
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href=""><b>Amazon Business</b></br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 	<ul class="list-group list-unstyled">
+	      	 		<li><a href="">Amazon Business </br> Todo para </br> tu negocio</a></li>
+	      	 	</ul>
+	      	 	
+	      	 </div>
+	      	</div> 	
+	      </div>
+	      	 
+	      	 
+	      	 
+	      </div>
+	  </div
+	   
+	  <!--底部结束-->	</body>
+</html>
